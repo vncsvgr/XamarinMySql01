@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySql01.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Banco MySQL" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Informe o servidor:" />
+        <Entry x:Name="edtServidor" />
+
+        <Label Text="Informe a porta:" />
+        <Entry x:Name="edtPorta" Keyboard="Numeric" />
+
+        <Label Text="Informe o usuário:" />
+        <Entry x:Name="edtUsuario" />
+
+        <Label Text="Informe a senha:" />
+        <Entry x:Name="edtSenha" IsPassword="True"/>
+
+        <Label Text="Informe o banco:" />
+        <Entry x:Name="edtBanco" />
+
+        <Button x:Name="btnConectar" Text="Conectar" Clicked="btnConectar_Clicked" />
+    </StackLayout>
+
+</ContentPage>
